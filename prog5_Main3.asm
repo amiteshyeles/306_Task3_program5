@@ -6,6 +6,7 @@
 ; of mRNA processing.
                .ORIG x4000
 ; initialize the stack pointer
+;OLD CODE, using for git commit example
 
 	LD R6, SP
 
@@ -98,6 +99,7 @@ startcG
 
 
 NEXTSTEP
+
 
 
 ;;;;;;;;;;;;;;;;;	
