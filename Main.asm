@@ -12,19 +12,18 @@
 
 ; set up the keyboard interrupt vector table entry
 
-	LD R5, ISRSTART
-	STI R5, IVT
+	LD R0, ISRSTART
+	STI R0, IVT
 
 ; enable keyboard interrupts
-	
-	LD R2, MASK
-loop	LDI R3, KBSR
-	BRzp loop
-	ADD R3, R3, R2
-	STI R3, KBSR
+	LD R0, BUFFER
+	STI R0, KBSR
 
-	LDI R7, IVT
-	JMP R7
+	
+loop	LDI R3, BUFFER
+	BRzp loop
+	
+	
 ; start of actual program
 startprogram	
 	AND R5, R5, #0
@@ -37,6 +36,9 @@ inloop	LDI R0, BUFFER
 	STI R1, BUFFER
 	; PROCESS R0
 
+
+
+BRnzp loop
 
 
 SP		.FILL	x4000
