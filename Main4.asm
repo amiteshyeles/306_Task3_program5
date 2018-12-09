@@ -192,9 +192,9 @@ stopcA2
 	ADD R5, R5, #3
 	Brnzp inloop
 
-DONE
+DONE			;end of code
 	TRAP x25
-	
+
 
 SP		.FILL	x4000
 IVT		.FILL	x180
