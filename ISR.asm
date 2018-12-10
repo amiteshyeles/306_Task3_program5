@@ -1,6 +1,6 @@
 ; ISR.asm
-; Name:
-; UTEid: 
+; Name: Vikram Pandian and Amitesh Yeleswarapu
+; UTEid: vip248 and avy89
 ; Keyboard ISR runs when a key is struck
 ; Checks for a valid RNA symbol and places it at x4600
                
