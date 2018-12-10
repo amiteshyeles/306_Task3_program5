@@ -1,6 +1,6 @@
 ; Main.asm
-; Name:
-; UTEid: 
+; Name: Amitesh Yeleswarapu and Vikram Pandian
+; UTEid: AVY89 and VIP248
 ; Continuously reads from x4600 making sure its not reading duplicate
 ; symbols. Processes the symbol based on the program description
 ; of mRNA processing.
